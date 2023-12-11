@@ -33,7 +33,7 @@ module.exports = {
         ],
         Paragraph: 'Offl. § 13 jf. fvl. § 13 (1) nr.1',
         ResponsiblePersonRecno: ARCHIVE_ROBOT.recno, //  Robot
-        ResponsibleEnterpriseNumber: '929882385', // fylkeskommune vfk (929882385) tfk (929882989)
+        ResponsibleEnterpriseNumber: '929882989', // fylkeskommune vfk (929882385) tfk (929882989)
         Status: 'J',
         Title: `Tilbud om skoleplass skoleåret ${currentYear}/${nextYear}`,
         UnofficialTitle: `Tilbud om skoleplass skoleåret ${currentYear}/${nextYear} - ${archiveData.studentName}`
