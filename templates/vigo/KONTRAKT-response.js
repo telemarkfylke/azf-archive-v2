@@ -32,7 +32,7 @@ module.exports = {
         Category: 'Dokument ut',
         Contacts: [
           {
-            ReferenceNumber: NODE_ENV === 'production' ? 'recno:200016' : 'recno:200019', // Seksjon Fag- og yrkesopplæring (vfk) Team fag-, yrkes- og voksenopplæring (tfk) (vfk-test: 200019, vfk-prod: 200016) (tfk-test: 200249, tfk-prod: 200472)
+            ReferenceNumber: NODE_ENV === 'production' ? 'recno:200472' : 'recno:200249', // Seksjon Fag- og yrkesopplæring (vfk) Team fag-, yrkes- og voksenopplæring (tfk) (vfk-test: 200019, vfk-prod: 200016) (tfk-test: 200249, tfk-prod: 200472)
             Role: 'Avsender'
           },
           {
