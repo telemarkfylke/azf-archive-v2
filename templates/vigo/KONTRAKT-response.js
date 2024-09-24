@@ -17,7 +17,8 @@ module.exports = {
         streetAddress: pdfData.streetAddress,
         zipCode: pdfData.zipCode,
         zipPlace: pdfData.zipPlace,
-        department: 'Team fag-, yrkes- og voksenopplæring' // Vestfold => Seksjon Fag- og yrkesopplæring
+        department: 'Fagopplæring', // Vestfold => Seksjon Fag- og yrkesopplæring
+        company: 'Seksjon for kompetanse og inkludering'
       }
     }
   },
