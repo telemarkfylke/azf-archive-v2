@@ -7,7 +7,7 @@ module.exports = {
         AccessCode: '26',
         AccessCodeDescription: 'Offl. § 26 femte ledd (unntak for fødselsnr og nummer med tilsvarende funksjon)',
         AccessGroup: archiveData.accessGroup,
-        Archive: 'Saksdokument',
+        Archive: 'Elevdokument',
         CaseNumber: archiveData.caseNumber,
         Category: 'Dokument inn',
         Contacts: [
@@ -28,15 +28,15 @@ module.exports = {
             Category: '1',
             Format: 'PDF',
             Status: 'F',
-            Title: 'Avtale om leie av bærbar-PC nettbrett og lån av gratis læremidler (signert)',
+            Title: 'Avtale om leie av bærbar PC nettbrett og lån av gratis læremidler - Signert',
             VersionFormat: archiveData.versionFormat
           }
         ],
         Paragraph: 'Offl. § 26 femte ledd',
         ResponsibleEnterpriseNumber: archiveData.schoolOrgnr,
         Status: 'J',
-        Title: 'Avtale om leie av bærbar-PC nettbrett og lån av gratis læremidler (signert)',
-        UnofficialTitle: `Avtale om leie av bærbar-PC nettbrett og lån av gratis læremidler (signert) - ${archiveData.studentName}`
+        Title: 'Avtale om leie av bærbar PC/nettbrett og lån av gratis læremidler - Signert',
+        UnofficialTitle: `Avtale om leie av bærbar PC/nettbrett og lån av gratis læremidler - Signert - ${archiveData.studentName}`
       }
     }
   },
