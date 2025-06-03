@@ -23,8 +23,8 @@ module.exports = {
   MAIL: {
     cc: (process.env.MAIL_CC && process.env.MAIL_CC.split(',')) || false,
     bcc: (process.env.MAIL_BCC && process.env.MAIL_BCC.split(',')) || false,
-    from: process.env.MAIL_FROM || 'noreply@vtfk.no',
-    templateName: process.env.MAIL_TEMPLATE_NAME || 'vtfk',
+    from: process.env.MAIL_FROM || 'noreply@telemarkfylke.no',
+    templateName: process.env.MAIL_TEMPLATE_NAME || 'telemarkfylke',
     signature: {
       name: 'Arkiveringsroboten',
       title: '🚣',
