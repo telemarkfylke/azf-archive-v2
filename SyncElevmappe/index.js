@@ -37,7 +37,7 @@ module.exports = async (context, req) => {
   }
 
   // Below, we see valid input properties in body
-  const { ssn, name, firstName, lastName, birthdate, fakeSsn, gender, streetAddress, zipCode, zipPlace, forceUpdate, manualData } = req.body
+  const { ssn, name, firstName, lastName, birthdate, fakeSsn, gender, streetAddress, zipCode, zipPlace, forceUpdate, manualData, isStudentmappe } = req.body
   const nameObj = getName(name, firstName, lastName) // Name can be either "name" or "firstName and lastName", so we make sure it we have them all further on
   const syncPrivatePersonData = {
     ssn,
@@ -66,8 +66,9 @@ module.exports = async (context, req) => {
   }
 
   try {
+    const useStudentmappe = isStudentmappe === true
     logger('info', ['Syncing elevmappe'], context)
-    const elevmappe = await syncElevmappe(privatePerson, context)
+    const elevmappe = await syncElevmappe(privatePerson, useStudentmappe, context)
     logger('info', ['Succesfully synced elevmappe'], context)
     return httpResponse(200, { privatePerson, elevmappe })
   } catch (error) {
